@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/passajir_dialog_bg">
+
+    <TextView
+        android:id="@+id/passajir"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/passajir_dialog_bg"
+        android:gravity="center"
+        android:text="@string/client"
+        android:textColor="@color/realBlack"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/realWhite"
+        app:layout_constraintBottom_toBottomOf="@id/countChild"
+        app:layout_constraintTop_toBottomOf="@id/passajir" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_baseline_close_black"
+        app:layout_constraintBottom_toBottomOf="@id/passajir"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/viewPassagit"
+        android:layout_width="match_parent"
+        android:layout_height="0.3px"
+        android:background="@color/view_profile_bg"
+        app:layout_constraintTop_toBottomOf="@id/passajir" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3px"
+        android:background="@color/view_profile_bg"
+        app:layout_constraintTop_toBottomOf="@id/countAdult" />
+
+    <TextView
+        android:id="@+id/adult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18sp"
+        android:text="@string/adult"
+        android:textColor="@color/realBlack"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passajir" />
+
+    <TextView
+        android:id="@+id/removeAdult"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:gravity="center"
+        android:text="@string/remove"
+        android:textColor="@color/realBlack"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/adult"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/adult"
+        app:layout_constraintRight_toLeftOf="@id/countAdult"
+        app:layout_constraintTop_toTopOf="@id/adult" />
+
+    <TextView
+        android:id="@+id/countAdult"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/realBlack"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/removeAdult"
+        app:layout_constraintLeft_toRightOf="@id/removeAdult"
+        app:layout_constraintRight_toLeftOf="@id/addAdult"
+        app:layout_constraintTop_toTopOf="@id/removeAdult" />
+
+    <TextView
+        android:id="@+id/addAdult"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/nextBt"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/countAdult"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/adult" />
+
+
+    <TextView
+        android:id="@+id/child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18sp"
+        android:text="@string/child"
+        android:textColor="@color/realBlack"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adult" />
+
+    <TextView
+        android:id="@+id/removeChild"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:gravity="center"
+        android:text="@string/remove"
+        android:textColor="@color/realBlack"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/child"
+        app:layout_constraintLeft_toLeftOf="@id/removeAdult"
+        app:layout_constraintRight_toRightOf="@id/removeAdult"
+        app:layout_constraintTop_toTopOf="@id/child" />
+
+    <TextView
+        android:id="@+id/countChild"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/realBlack"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/removeChild"
+        app:layout_constraintLeft_toLeftOf="@id/countAdult"
+        app:layout_constraintRight_toRightOf="@id/countAdult"
+        app:layout_constraintTop_toTopOf="@id/removeChild" />
+
+    <TextView
+        android:id="@+id/addChild"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/nextBt"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/child"
+        app:layout_constraintLeft_toLeftOf="@id/addAdult"
+        app:layout_constraintRight_toRightOf="@id/addAdult"
+        app:layout_constraintTop_toTopOf="@id/child" />
+
+
+    <View
+        android:id="@+id/viewChild"
+        android:layout_width="match_parent"
+        android:layout_height="0.3px"
+        android:background="@color/view_profile_bg"
+        app:layout_constraintTop_toBottomOf="@id/countChild" />
+
+
+    <TextView
+        android:id="@+id/desciption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:text="@string/ageOfChild"
+        android:textColor="#686868"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/child" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3px"
+        android:background="@color/view_profile_bg"
+        app:layout_constraintTop_toBottomOf="@id/desciption" />
+
+    <ImageView
+        android:id="@+id/ageChildBg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/client_dialog_atr_bg"
+        android:hint="@string/age"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/box"
+        app:layout_constraintTop_toBottomOf="@id/desciption" />
+
+    <TextView
+        android:id="@+id/ageChildHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="@string/age"
+        app:layout_constraintBottom_toTopOf="@id/ageChild"
+        app:layout_constraintLeft_toLeftOf="@id/ageChildBg"
+        app:layout_constraintRight_toRightOf="@id/ageChildBg"
+        app:layout_constraintTop_toTopOf="@id/ageChildBg" />
+
+    <TextView
+        android:id="@+id/ageChild"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_down_icon"
+        android:gravity="center|left"
+        android:textColor="@color/realBlack"
+        app:layout_constraintBottom_toBottomOf="@id/ageChildBg"
+        app:layout_constraintLeft_toLeftOf="@id/ageChildBg"
+        app:layout_constraintRight_toRightOf="@id/ageChildBg"
+        app:layout_constraintTop_toBottomOf="@id/ageChildHint" />
+
+    <CheckBox
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+
+        android:text="@string/withPlace"
+        app:layout_constraintLeft_toRightOf="@id/ageChildBg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desciption" />
+
+    <ImageView
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginHorizontal="25dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_save_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resume"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/saveBtn"
+        app:layout_constraintLeft_toLeftOf="@id/saveBtn"
+        app:layout_constraintRight_toRightOf="@id/saveBtn"
+        app:layout_constraintTop_toTopOf="@id/saveBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
