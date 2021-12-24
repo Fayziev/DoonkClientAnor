@@ -2,7 +2,7 @@ package uz.anorgroup.doonkclient.domain.usecase
 
 import kotlinx.coroutines.flow.Flow
 import uz.anorgroup.doonkclient.data.request.LoginRequest
-import uz.anorgroup.doonkanorgroup.data.responce.LoginResponse
+import uz.anorgroup.doonkclient.data.responce.LoginResponse
 
 interface LoginScreenUseCase {
 

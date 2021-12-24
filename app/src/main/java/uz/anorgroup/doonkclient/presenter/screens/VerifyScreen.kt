@@ -11,13 +11,14 @@ import com.fraggjkee.smsconfirmationview.SmsConfirmationView
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import uz.anorgroup.doonkanorgroup.R
-import uz.anorgroup.doonkclient.data.request.RegisterRequest
-import uz.anorgroup.doonkclient.data.request.VerifyRequest
-import uz.anorgroup.doonkanorgroup.databinding.ScreenVerifyBinding
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.VerifyViewModel
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.impl.VerifyViewModelImpl
+import uz.anorgroup.doonkanorgroup.utils.scope
 import uz.anorgroup.doonkanorgroup.utils.showToast
+import uz.anorgroup.doonkclient.R
+import uz.anorgroup.doonkclient.data.request.RegisterRequest
+import uz.anorgroup.doonkclient.data.request.VerifyRequest
+import uz.anorgroup.doonkclient.databinding.ScreenVerifyBinding
 
 @AndroidEntryPoint
 class VerifyScreen : Fragment(R.layout.screen_verify) {
@@ -85,10 +86,10 @@ class VerifyScreen : Fragment(R.layout.screen_verify) {
 
     override fun onDestroy() {
         super.onDestroy()
-        s=null
-        phone=null
-        name=null
-        surname=null
+        s = null
+        phone = null
+        name = null
+        surname = null
     }
 
 }

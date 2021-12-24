@@ -15,10 +15,6 @@
         android:id="@+id/create"
         android:icon="@drawable/ic_add_svgrepo_com"
         android:title="@string/create" />
-    <item
-        android:id="@+id/chat"
-        android:icon="@drawable/ic_chat"
-        android:title="@string/chat" />
 
     <item
         android:id="@+id/profile"

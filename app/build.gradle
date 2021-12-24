@@ -41,6 +41,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
     buildFeatures {
         viewBinding true
     }
@@ -142,12 +143,12 @@ dependencies {
      */
     implementation 'com.github.tejpratap46:PDFCreatorAndroid:3.0.2'
 
-//    /**
-//    CrashList
-//    * */
-//    implementation 'com.google.firebase:firebase-analytics-ktx'
-//    implementation 'com.google.firebase:firebase-crashlytics-ktx'
-//    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    /**
+    CrashList
+    * */
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
 
     /**
      Circle Image View

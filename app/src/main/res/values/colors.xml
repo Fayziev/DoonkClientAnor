@@ -20,4 +20,5 @@
     <color name="black_transparent">#80000000</color>
     <color name="passajir_dialog_bg">#F6F5F0</color>
     <color name="passajir_dialog_atribut_bg">#EBF8F0</color>
+    <color name="default_bacckground">#F5F4EF</color>
 </resources>

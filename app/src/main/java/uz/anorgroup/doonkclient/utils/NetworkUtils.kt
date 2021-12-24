@@ -6,7 +6,7 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import timber.log.Timber
-import uz.anorgroup.doonkanorgroup.BuildConfig
+import uz.anorgroup.doonkclient.BuildConfig
 import uz.anorgroup.doonkclient.data.pref.MyPref
 
 fun OkHttpClient.Builder.addLoggingInterceptor(context: Context): OkHttpClient.Builder {
