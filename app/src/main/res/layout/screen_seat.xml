@@ -1,8 +1,273 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/default_bacckground">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTop"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/nextBt"
+            android:gravity="center"
+            android:text="@string/choose_place"
+            android:textColor="@color/realWhite"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:elevation="15dp"
+        android:src="@drawable/ic_car_add_back"
+        app:layout_constraintBottom_toBottomOf="@id/cardTop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardTop" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toBottomOf="@id/cardTop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F4EF">
+
+            <ImageView
+                android:id="@+id/white_armchair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"
+                android:src="@drawable/white_armchair"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/white_armchair_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/free_place"
+                android:textColor="@color/realBlack"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/white_armchair"
+                app:layout_constraintStart_toEndOf="@+id/white_armchair"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/red_armchair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"
+                android:src="@drawable/red_armchair"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/white_armchair_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/red_armchair_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/free_place"
+                android:textColor="@color/realBlack"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/white_armchair"
+                app:layout_constraintStart_toEndOf="@+id/red_armchair"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/green_armchair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"
+                android:src="@drawable/green_armchair"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/red_armchair_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/green_armchair_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/free_place"
+                android:textColor="@color/realBlack"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/white_armchair"
+                app:layout_constraintStart_toEndOf="@+id/green_armchair"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/edit_drawable"
+        app:layout_constraintBottom_toTopOf="@id/choosen_places"
+        app:layout_constraintLeft_toLeftOf="@id/choosen_places"
+        app:layout_constraintRight_toRightOf="@id/cost"
+        app:layout_constraintTop_toBottomOf="@id/card">
+
+
+        <ImageView
+            android:id="@+id/rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_rule"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/red_rectangle_1979"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/red_rectangle_1979"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rule" />
+
+
+        <TextView
+            android:id="@+id/occupied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/occupied"
+            android:textSize="8sp"
+            app:layout_constraintLeft_toLeftOf="@id/red_rectangle_1979"
+            app:layout_constraintRight_toRightOf="@id/red_rectangle_1979"
+            app:layout_constraintTop_toBottomOf="@id/red_rectangle_1979" />
+
+        <ImageView
+            android:id="@+id/green_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/green_rectangle"
+            app:layout_constraintRight_toLeftOf="@id/occupied"
+            app:layout_constraintTop_toTopOf="@id/rule" />
+
+
+        <TextView
+            android:id="@+id/selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/selected"
+            android:textSize="8sp"
+            app:layout_constraintLeft_toLeftOf="@id/green_rectangle"
+            app:layout_constraintRight_toRightOf="@id/green_rectangle"
+            app:layout_constraintTop_toBottomOf="@id/green_rectangle" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.3px"
+            android:layout_margin="15dp"
+            android:background="@color/view_profile_bg"
+            app:layout_constraintTop_toBottomOf="@id/rule" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/fin"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_margin="15dp"
+        android:src="@drawable/passajir_drawable"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/finished"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/finished"
+        android:textColor="@color/realWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/fin"
+        app:layout_constraintLeft_toLeftOf="@id/fin"
+        app:layout_constraintRight_toRightOf="@id/fin"
+        app:layout_constraintTop_toTopOf="@id/fin" />
+
+
+    <TextView
+        android:id="@+id/over_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/over_cost"
+        android:textColor="@color/realBlack"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/fin"
+        app:layout_constraintLeft_toLeftOf="@id/finished" />
+
+    <TextView
+        android:id="@+id/choosen_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/choosen_places"
+        android:textColor="@color/gray_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/over_cost"
+        app:layout_constraintLeft_toLeftOf="@id/finished" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="1799 руб"
+        android:textColor="@color/realBlack"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/fin"
+        app:layout_constraintRight_toRightOf="@id/finished" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="L11, L12"
+        android:textColor="@color/gray_text"
+        app:layout_constraintBottom_toTopOf="@id/cost"
+        app:layout_constraintRight_toRightOf="@id/finished" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

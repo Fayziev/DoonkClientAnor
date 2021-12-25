@@ -4,9 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import uz.anorgroup.doonkanorgroup.presenter.screens.pages.*
-import uz.anorgroup.doonkclient.presenter.screens.pages.ProfilePage
-import uz.anorgroup.doonkclient.presenter.screens.pages.TripPage
+import uz.anorgroup.doonkclient.presenter.screens.pages.*
 
 class PageAdapter(
     frm: FragmentManager, lifecycle: Lifecycle
@@ -22,12 +20,8 @@ class PageAdapter(
                 searchPage
             }
             2 -> {
-                val create = CreateTripPage()
+                val create = PostPage()
                 create
-            }
-            3 -> {
-                val chatPage = ChatPage()
-                chatPage
             }
             else -> {
                 val profilePage = ProfilePage()
@@ -37,5 +31,5 @@ class PageAdapter(
     }
 
 
-    override fun getItemCount(): Int = 5
+    override fun getItemCount(): Int = 4
 }

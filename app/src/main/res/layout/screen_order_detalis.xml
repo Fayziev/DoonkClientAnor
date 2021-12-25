@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bacckground">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/nextBt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tashkent"
+        android:textColor="@color/realWhite"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/toolbar"
+        app:layout_constraintRight_toRightOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:textColor="@color/realWhite"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/toolbar"
+        app:layout_constraintRight_toRightOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/places" />
+
+
+    <TextView
+        android:id="@+id/destanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/destanation"
+        android:textColor="@color/realBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/realWhite"
+        app:layout_constraintBottom_toTopOf="@id/bg2"
+        app:layout_constraintTop_toBottomOf="@id/destanation" />
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/realWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg1" />
+
+
+    <ImageView
+        android:id="@+id/resume_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_margin="15dp"
+        android:src="@drawable/passajir_drawable"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resume"
+        android:textColor="@color/realWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/resume_bg"
+        app:layout_constraintLeft_toLeftOf="@id/resume_bg"
+        app:layout_constraintRight_toRightOf="@id/resume_bg"
+        app:layout_constraintTop_toTopOf="@id/resume_bg" />
+
+
+    <TextView
+        android:id="@+id/timeTrip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Отправление и прибытие по местному времени"
+        android:textColor="@color/realBlack"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/bg1"
+        app:layout_constraintRight_toRightOf="@id/bg1"
+        app:layout_constraintTop_toTopOf="@id/bg1" />
+
+    <ImageView
+        android:id="@+id/circle_time_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintLeft_toLeftOf="@id/bg1"
+        app:layout_constraintTop_toBottomOf="@id/timeTrip" />
+
+
+    <TextView
+        android:id="@+id/time_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="08:30, 23 июнья"
+        android:textColor="@color/realBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/circle_time_out"
+        app:layout_constraintLeft_toRightOf="@id/circle_time_out"
+        app:layout_constraintTop_toTopOf="@id/circle_time_out" />
+
+
+    <TextView
+        android:id="@+id/desciption_time_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:text="Ташкент \n Международный автовокзал, \n улица Бунедкор, дом 7, строение 1"
+        android:textColor="@color/realBlack"
+        app:layout_constraintLeft_toLeftOf="@id/time_out"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_time_out" />
+
+    <ImageView
+        android:id="@+id/circle_time_come"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintLeft_toLeftOf="@id/bg1"
+        app:layout_constraintTop_toBottomOf="@id/desciption_time_out" />
+
+    <TextView
+        android:id="@+id/time_come"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="21:30, 23 июнья"
+        android:textColor="@color/realBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/circle_time_come"
+        app:layout_constraintLeft_toRightOf="@id/circle_time_come"
+        app:layout_constraintTop_toTopOf="@id/circle_time_come" />
+
+
+    <TextView
+        android:id="@+id/desciption_time_come"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:text="Ташкент \n Международный автовокзал, \n улица Бунедкор, дом 7, строение 1"
+        android:textColor="@color/realBlack"
+        app:layout_constraintLeft_toLeftOf="@id/time_come"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_time_come" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В пути: 13 часов 0 минут"
+        android:textColor="@color/realBlack"
+        app:layout_constraintBottom_toBottomOf="@id/bg1"
+        app:layout_constraintLeft_toLeftOf="@id/desciption_time_come"
+        app:layout_constraintTop_toBottomOf="@id/desciption_time_come" />
+
+
+    <ImageView
+        android:layout_width="10sp"
+        android:layout_height="0dp"
+        android:rotation="45"
+        app:layout_constraintBottom_toTopOf="@id/circle_time_come"
+        app:layout_constraintLeft_toLeftOf="@id/circle_time_come"
+        app:layout_constraintRight_toRightOf="@id/circle_time_come"
+        app:layout_constraintTop_toBottomOf="@id/circle_time_out" />
+
+
+    <TextView
+        android:id="@+id/nameDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Муроджон Турсунов"
+        android:textColor="@color/realBlack"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/bg2"
+        app:layout_constraintTop_toTopOf="@id/bg2" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="25dp"
+        android:src="@drawable/background_intro"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/nameDriver"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameDriver" />
+
+
+    <ImageView
+        android:id="@+id/startsDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintLeft_toLeftOf="@id/nameDriver"
+        app:layout_constraintTop_toBottomOf="@id/nameDriver" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14sp"
+        android:text="5,0/5, отзывов: 4"
+        android:textColor="@color/realBlack"
+        app:layout_constraintBottom_toBottomOf="@id/startsDriver"
+        app:layout_constraintLeft_toRightOf="@id/startsDriver"
+        app:layout_constraintTop_toTopOf="@id/startsDriver" />
+
+    <TextView
+        android:id="@+id/connectDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Связаться с Муродом"
+        android:textColor="@color/nextBt"
+        app:layout_constraintLeft_toLeftOf="@id/startsDriver"
+        app:layout_constraintTop_toBottomOf="@id/startsDriver" />
+
+    <TextView
+        android:id="@+id/descriptionDriver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="Пишите в личку или на Telegram, буду рад хорошему обшению в дороге"
+        android:textColor="@color/realBlack"
+        app:layout_constraintLeft_toLeftOf="@id/startsDriver"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connectDriver" />
+
+    <TextView
+        android:id="@+id/markCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="CHEVROLET LACETTI"
+        android:textColor="@color/nextBt"
+        app:layout_constraintLeft_toLeftOf="@id/descriptionDriver"
+        app:layout_constraintTop_toBottomOf="@id/descriptionDriver" />
+
+    <ImageView
+        android:id="@+id/markIcon"
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_car"
+        app:layout_constraintBottom_toBottomOf="@id/markCar"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/markCar" />
+
+
+    <TextView
+        android:id="@+id/colorCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Черный"
+        android:textColor="@color/realBlack"
+        app:layout_constraintLeft_toLeftOf="@id/descriptionDriver"
+        app:layout_constraintTop_toBottomOf="@id/markCar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

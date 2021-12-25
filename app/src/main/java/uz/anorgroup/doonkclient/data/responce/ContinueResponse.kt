@@ -1,4 +1,6 @@
-package uz.anorgroup.doonkanorgroup.data.responce
+package uz.anorgroup.doonkclient.data.responce
+
+import uz.anorgroup.doonkclient.data.responce.Data
 
 data class ContinueResponse(
     val code: Int,

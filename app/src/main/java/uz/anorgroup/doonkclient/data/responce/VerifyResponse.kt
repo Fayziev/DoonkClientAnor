@@ -1,4 +1,4 @@
-package uz.anorgroup.doonkanorgroup.data.responce
+package uz.anorgroup.doonkclient.data.responce
 
 data class VerifyResponse(
     val code: Int,

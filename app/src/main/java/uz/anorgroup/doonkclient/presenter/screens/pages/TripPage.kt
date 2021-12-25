@@ -9,4 +9,5 @@ import uz.anorgroup.doonkclient.databinding.PageTripBinding
 @AndroidEntryPoint
 class TripPage : Fragment(R.layout.page_trip) {
     private val bind by viewBinding(PageTripBinding::bind)
+
 }

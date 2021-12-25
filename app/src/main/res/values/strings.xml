@@ -195,4 +195,17 @@
     <string name="finished">Закончить</string>
     <string name="order">Заказ №:</string>
     <string name="payment">Оплата:</string>
+    <!--Screen state armchair -->
+    <string name="choose_place">Выбрать места</string>
+    <string name="free_place">Свободно</string>
+    <string name="busy_place">Забронировано</string>
+    <string name="choose">Bыбран</string>
+
+    <string name="selected">Selected</string>
+    <string name="occupied">Occupied</string>
+    <string name="choosen_places">Bыбранное место:</string>
+    <string name="cost_places">Сумма:</string>
+
+    <!--Screen order detalis -->
+    <string name="destanation">МАРШРУТ</string>
 </resources>

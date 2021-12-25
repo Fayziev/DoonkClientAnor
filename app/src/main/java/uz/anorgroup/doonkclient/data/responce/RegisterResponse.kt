@@ -1,6 +1,6 @@
-package uz.anorgroup.doonkanorgroup.data.responce
+package uz.anorgroup.doonkclient.data.responce
 
-import com.google.gson.annotations.SerializedName
+import uz.anorgroup.doonkclient.data.responce.Data
 
 
 data class RegisterResponse(
