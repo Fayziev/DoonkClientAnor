@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable-/ticket_punktir_bg.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable-v24/ic_baseline_close_black.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable-v24/ic_frame_icon.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable-v24/ic_mark_frame.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable-v24/ic_pdf_generate.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable/add_car_bt_bg.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable/bg_punktir.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable/bg_ticket.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable/client_dialog_atr_bg.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable/comments_bg.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/drawable/drawable_back.xml" value="0.25416666666666665" />
@@ -43,6 +45,7 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/layout/screen_order_detalis.xml" value="0.2" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/layout/screen_register.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/layout/screen_seat.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/layout/screen_ticket.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/layout/screen_verify.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/DoonkClient/app/src/main/res/menu/menu_main_screen.xml" value="0.23802083333333332" />
       </map>
