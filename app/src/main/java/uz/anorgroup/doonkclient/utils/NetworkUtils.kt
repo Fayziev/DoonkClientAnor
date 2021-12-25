@@ -1,4 +1,4 @@
-package uz.anorgroup.doonkanorgroup.utils
+package uz.anorgroup.doonkclient.utils
 
 import android.content.Context
 import com.readystatesoftware.chuck.ChuckInterceptor

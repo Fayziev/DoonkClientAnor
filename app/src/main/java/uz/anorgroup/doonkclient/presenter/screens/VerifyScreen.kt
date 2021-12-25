@@ -13,8 +13,8 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.VerifyViewModel
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.impl.VerifyViewModelImpl
-import uz.anorgroup.doonkanorgroup.utils.scope
-import uz.anorgroup.doonkanorgroup.utils.showToast
+import uz.anorgroup.doonkclient.utils.scope
+import uz.anorgroup.doonkclient.utils.showToast
 import uz.anorgroup.doonkclient.R
 import uz.anorgroup.doonkclient.data.request.RegisterRequest
 import uz.anorgroup.doonkclient.data.request.VerifyRequest

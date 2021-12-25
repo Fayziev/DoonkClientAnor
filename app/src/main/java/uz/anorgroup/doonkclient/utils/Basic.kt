@@ -1,6 +1,5 @@
-package uz.anorgroup.doonkanorgroup.utils
+package uz.anorgroup.doonkclient.utils
 
-import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
@@ -20,13 +19,14 @@ fun timber(message: String, tag: String = "TTT") {
 }
 
 fun myLog(message: String, tag: String = "TTT") {
-    Log.d(tag, message)
+    Timber.d(message)
 }
 
 fun Fragment.showToast(message: String) {
     Toast.makeText(this.requireContext(), message, Toast.LENGTH_SHORT).show()
 }
-fun <T : ViewBinding> T.scope(block : T.() ->Unit) {
+
+fun <T : ViewBinding> T.scope(block: T.() -> Unit) {
     block(this)
 }
 
@@ -34,9 +34,3 @@ fun File.toRequestData(): MultipartBody.Part {
     val requestFile = this.asRequestBody("image/jpeg".toMediaTypeOrNull())
     return MultipartBody.Part.createFormData("avatar", name, requestFile)
 }
-
-/*
-0-Register
-1-Enter
-2-Main
- */

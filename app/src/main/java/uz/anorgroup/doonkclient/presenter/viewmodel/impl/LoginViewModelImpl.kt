@@ -9,8 +9,8 @@ import kotlinx.coroutines.launch
 import uz.anorgroup.doonkclient.data.request.LoginRequest
 import uz.anorgroup.doonkclient.domain.usecase.LoginScreenUseCase
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.LoginViewModel
-import uz.anorgroup.doonkanorgroup.utils.eventValueFlow
-import uz.anorgroup.doonkanorgroup.utils.isConnected
+import uz.anorgroup.doonkclient.utils.eventValueFlow
+import uz.anorgroup.doonkclient.utils.isConnected
 import javax.inject.Inject
 
 @HiltViewModel
