@@ -15,8 +15,8 @@ import kotlinx.coroutines.flow.onEach
 import ru.ldralighieri.corbind.widget.textChanges
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.LoginViewModel
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.impl.LoginViewModelImpl
-import uz.anorgroup.doonkanorgroup.utils.scope
-import uz.anorgroup.doonkanorgroup.utils.showToast
+import uz.anorgroup.doonkclient.utils.scope
+import uz.anorgroup.doonkclient.utils.showToast
 import uz.anorgroup.doonkclient.R
 import uz.anorgroup.doonkclient.data.request.LoginRequest
 import uz.anorgroup.doonkclient.databinding.ScreenLoginBinding

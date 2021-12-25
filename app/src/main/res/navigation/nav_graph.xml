@@ -7,7 +7,6 @@
 
     <fragment
         android:id="@+id/loginScreen"
-        tools:layout="@layout/screen_login"
         android:name="uz.anorgroup.doonkclient.presenter.screens.LoginScreen"
         android:label="LoginScreen"
         tools:layout="@layout/screen_login">
@@ -20,7 +19,6 @@
     </fragment>
     <fragment
         android:id="@+id/registerScreen"
-        tools:layout="@layout/screen_register"
         android:name="uz.anorgroup.doonkclient.presenter.screens.RegisterScreen"
         android:label="RegisterScreen"
         tools:layout="@layout/screen_register">
@@ -33,7 +31,6 @@
     </fragment>
     <fragment
         android:id="@+id/verifyScreen"
-        tools:layout="@layout/screen_verify"
         android:name="uz.anorgroup.doonkanorgroup.presenter.screens.VerifyScreen"
         android:label="VerifyScreen"
         tools:layout="@layout/screen_verify">
@@ -46,8 +43,28 @@
     </fragment>
     <fragment
         android:id="@+id/mainScreen"
-        tools:layout="@layout/screen_main"
         android:name="uz.anorgroup.doonkclient.presenter.screens.MainScreen"
         android:label="MainScreen"
-        tools:layout="@layout/screen_main" />
+        tools:layout="@layout/screen_main"/>
+    <fragment
+        android:id="@+id/seatScreen"
+        android:name="uz.anorgroup.doonkclient.presenter.screens.SeatScreen"
+        android:label="SeatScreen"
+        tools:layout="@layout/screen_seat" />
+    <fragment
+        android:id="@+id/aboutReferenceScreen"
+        android:name="uz.anorgroup.doonkclient.presenter.screens.AboutReferenceScreen"
+        android:label="AboutReferenceScreen"
+        tools:layout="@layout/screen_about_reference" />
+    <fragment
+        android:id="@+id/frameScreen"
+        android:name="uz.anorgroup.doonkclient.presenter.screens.FrameScreen"
+        android:label="FrameScreen"
+        tools:layout="@layout/screen_frame" />
+    <fragment
+        android:id="@+id/ticketScreen"
+        android:name="uz.anorgroup.doonkclient.presenter.screens.TicketScreen"
+        android:label="TicketScreen"
+        tools:layout="@layout/screen_ticket" />
+
 </navigation>

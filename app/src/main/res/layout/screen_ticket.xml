@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bacckground">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/nextBt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orders"
+        android:textColor="@color/realWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="@id/toolbar"
+        app:layout_constraintRight_toRightOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_car_add_back"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/default_bacckground"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/innerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="65dp"
+                android:background="@color/realWhite"
+                android:shadowRadius="16">
+
+                <ImageView
+                    android:id="@+id/top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:background="@color/nextBt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="448-92-XXXX"
+                    android:textColor="@color/realWhite"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/top_bg"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/top_bg" />
+
+
+                <ImageView
+                    android:id="@+id/timeOutIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:src="@drawable/ic_circle_red"
+                    android:textColor="@color/realBlack"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/top_bg" />
+
+
+                <TextView
+                    android:id="@+id/timeOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:text="08:30"
+                    android:textColor="@color/realBlack"
+                    app:layout_constraintBottom_toBottomOf="@id/timeOutIcon"
+                    app:layout_constraintLeft_toRightOf="@id/timeOutIcon"
+                    app:layout_constraintTop_toTopOf="@id/timeOutIcon" />
+
+                <TextView
+                    android:id="@+id/outDesciption"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Ташкент Международный автовокзал, улица Бунедкор, дом 7, строение 1"
+                    android:textColor="@color/realBlack"
+                    app:layout_constraintLeft_toLeftOf="@id/timeOut"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/timeOut" />
+
+                <ImageView
+                    android:id="@+id/timeComeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:src="@drawable/blue_rectangle"
+                    android:textColor="@color/realBlack"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/outDesciption" />
+
+                <TextView
+                    android:id="@+id/timeCome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:text="21:30"
+                    android:textColor="@color/realBlack"
+                    app:layout_constraintBottom_toBottomOf="@id/timeComeIcon"
+                    app:layout_constraintLeft_toRightOf="@id/timeComeIcon"
+                    app:layout_constraintTop_toTopOf="@id/timeComeIcon" />
+
+
+                <TextView
+                    android:id="@+id/comeDesciption"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Санкт-Петербург Автовокзал “Обводный”, набереная Обвоного канала, дом 36"
+                    android:textColor="@color/realBlack"
+                    app:layout_constraintLeft_toLeftOf="@id/timeOut"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/timeCome" />
+
+
+                <ImageView
+                    android:id="@+id/dateIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_calendar"
+                    app:layout_constraintLeft_toLeftOf="@id/timeComeIcon"
+                    app:layout_constraintRight_toRightOf="@id/timeComeIcon"
+                    app:layout_constraintTop_toBottomOf="@id/comeDesciption" />
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@color/realBlack"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/dateIcon"
+                    app:layout_constraintLeft_toLeftOf="@id/timeOut"
+                    app:layout_constraintTop_toTopOf="@id/dateIcon" />
+
+                <ImageView
+                    android:id="@+id/placeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_place"
+                    app:layout_constraintLeft_toLeftOf="@id/timeComeIcon"
+                    app:layout_constraintRight_toRightOf="@id/timeComeIcon"
+                    app:layout_constraintTop_toBottomOf="@id/dateIcon" />
+
+
+                <TextView
+                    android:id="@+id/placeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place"
+                    android:textColor="@color/realBlack"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/placeIcon"
+                    app:layout_constraintLeft_toLeftOf="@id/timeOut"
+                    app:layout_constraintTop_toTopOf="@id/placeIcon" />
+
+                <TextView
+                    android:id="@+id/textOver_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/over_cost"
+                    android:textColor="@color/realBlack"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/placeIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.64" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="23 июнь 2020"
+                    app:layout_constraintBottom_toBottomOf="@id/dateText"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/dateText" />
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="L11, L12"
+                    app:layout_constraintBottom_toBottomOf="@id/placeText"
+                    app:layout_constraintLeft_toLeftOf="@id/date"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/placeText" />
+
+
+                <TextView
+                    android:id="@+id/over_cost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="1799 руб."
+                    android:textColor="@color/realBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/textOver_cost"
+                    app:layout_constraintLeft_toLeftOf="@id/date"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/textOver_cost" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/piece1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:cardBackgroundColor="@color/default_bacckground"
+                app:cardCornerRadius="150dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/innerLayout"
+                app:layout_constraintLeft_toLeftOf="@id/innerLayout"
+                app:layout_constraintRight_toLeftOf="@id/innerLayout"
+                app:layout_constraintTop_toTopOf="@id/innerLayout"
+                app:layout_constraintVertical_bias="0.75" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/piece2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:cardBackgroundColor="@color/default_bacckground"
+                app:cardCornerRadius="150dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/innerLayout"
+                app:layout_constraintLeft_toRightOf="@id/innerLayout"
+                app:layout_constraintRight_toRightOf="@id/innerLayout"
+                app:layout_constraintTop_toTopOf="@id/innerLayout"
+                app:layout_constraintVertical_bias="0.75" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                app:cardBackgroundColor="@color/realWhite"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/piece1"
+                app:layout_constraintLeft_toRightOf="@id/piece1"
+                app:layout_constraintRight_toLeftOf="@id/piece2"
+                app:layout_constraintTop_toTopOf="@id/piece1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

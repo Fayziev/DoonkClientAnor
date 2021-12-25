@@ -1,4 +1,4 @@
-package uz.anorgroup.doonkanorgroup.utils
+package uz.anorgroup.doonkclient.utils
 
 import androidx.lifecycle.LifecycleCoroutineScope
 import kotlinx.coroutines.CoroutineScope

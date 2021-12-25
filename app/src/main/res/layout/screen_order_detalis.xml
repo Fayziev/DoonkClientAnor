@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8sp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/realWhite"
         app:layout_constraintBottom_toTopOf="@id/bg2"
         app:layout_constraintTop_toBottomOf="@id/destanation" />
@@ -60,7 +60,6 @@
         android:id="@+id/bg2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="5dp"
         android:background="@color/realWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bg1" />
@@ -208,7 +207,7 @@
         android:src="@drawable/background_intro"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
-        app:layout_constraintBottom_toBottomOf="@id/nameDriver"
+        app:layout_constraintBottom_toBottomOf="@id/startsDriver"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nameDriver" />
 

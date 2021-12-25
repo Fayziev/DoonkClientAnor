@@ -19,9 +19,9 @@ class SearchPage : Fragment(R.layout.page_search) {
     }
 
     private fun load() {
-        for (i in 0 until 7) {
-
-        }
+//        for (i in 0 until 7) {
+//
+//        }
     }
 
 }

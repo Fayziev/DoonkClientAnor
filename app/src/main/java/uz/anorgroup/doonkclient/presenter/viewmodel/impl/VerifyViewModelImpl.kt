@@ -10,8 +10,8 @@ import uz.anorgroup.doonkclient.data.request.RegisterRequest
 import uz.anorgroup.doonkclient.data.request.VerifyRequest
 import uz.anorgroup.doonkclient.domain.usecase.VerifyScreenUseCase
 import uz.anorgroup.doonkanorgroup.presenter.viewmodel.VerifyViewModel
-import uz.anorgroup.doonkanorgroup.utils.eventValueFlow
-import uz.anorgroup.doonkanorgroup.utils.isConnected
+import uz.anorgroup.doonkclient.utils.eventValueFlow
+import uz.anorgroup.doonkclient.utils.isConnected
 import javax.inject.Inject
 
 @HiltViewModel
