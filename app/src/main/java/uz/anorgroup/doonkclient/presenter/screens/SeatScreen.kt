@@ -3,6 +3,7 @@ package uz.anorgroup.doonkclient.presenter.screens
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -22,10 +23,14 @@ class SeatScreen : Fragment(R.layout.screen_seat) {
         load()
         adapter.submitList(list)
         bind.listView.layoutManager = StaggeredGridLayoutManager(5, StaggeredGridLayoutManager.VERTICAL)
+        bind.finished.setOnClickListener {
+            findNavController().navigate(R.id.action_seatScreen_to_frameScreen)
+        }
     }
 
+
     private fun load() {
-        for (i in 0 until 5) {
+        for (i in 0 until 7) {
             list.add(SeatData(1))
             list.add(SeatData(1))
             list.add(SeatData(0))

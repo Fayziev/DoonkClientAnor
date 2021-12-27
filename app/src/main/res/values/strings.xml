@@ -214,4 +214,17 @@
     <string name="date">Дата:</string>
     <string name="place">Место:</string>
 
+
+    <!--Screen signature -->
+    <string name="address">ADDRESS</string>
+    <string name="navigateMap">Navigate on map</string>
+    <string name="parcelDetalis">PARCEL DETAILS</string>
+    <string name="type">Type:</string>
+    <string name="weight">Weight:</string>
+    <string name="size">Size:</string>
+    <string name="value">Value:</string>
+    <string name="commentInSigneture">COMMENT</string>
+    <string name="signature">SIGNATURE</string>
+    <string name="senderInSigneture">SENDER</string>
+
 </resources>

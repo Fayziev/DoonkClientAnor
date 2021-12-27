@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainScreen">
+    app:startDestination="@id/loginScreen">
 
     <fragment
         android:id="@+id/loginScreen"
@@ -45,26 +45,50 @@
         android:id="@+id/mainScreen"
         android:name="uz.anorgroup.doonkclient.presenter.screens.MainScreen"
         android:label="MainScreen"
-        tools:layout="@layout/screen_main"/>
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainScreen_to_tripDetalisScreen"
+            app:destination="@id/tripDetalisScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_newOrderScreen"
+            app:destination="@id/newOrderScreen" />
+    </fragment>
     <fragment
         android:id="@+id/seatScreen"
         android:name="uz.anorgroup.doonkclient.presenter.screens.SeatScreen"
         android:label="SeatScreen"
-        tools:layout="@layout/screen_seat" />
-    <fragment
-        android:id="@+id/aboutReferenceScreen"
-        android:name="uz.anorgroup.doonkclient.presenter.screens.AboutReferenceScreen"
-        android:label="AboutReferenceScreen"
-        tools:layout="@layout/screen_about_reference" />
+        tools:layout="@layout/screen_seat">
+        <action
+            android:id="@+id/action_seatScreen_to_frameScreen"
+            app:destination="@id/frameScreen" />
+    </fragment>
     <fragment
         android:id="@+id/frameScreen"
         android:name="uz.anorgroup.doonkclient.presenter.screens.FrameScreen"
         android:label="FrameScreen"
-        tools:layout="@layout/screen_frame" />
+        tools:layout="@layout/screen_frame">
+        <action
+            android:id="@+id/action_frameScreen_to_ticketScreen"
+            app:destination="@id/ticketScreen" />
+    </fragment>
     <fragment
         android:id="@+id/ticketScreen"
         android:name="uz.anorgroup.doonkclient.presenter.screens.TicketScreen"
         android:label="TicketScreen"
         tools:layout="@layout/screen_ticket" />
+    <fragment
+        android:id="@+id/tripDetalisScreen"
+        android:name="uz.anorgroup.doonkclient.presenter.screens.TripDetalisScreen"
+        android:label="TripDetalisScreen"
+        tools:layout="@layout/screen_order_detalis">
+        <action
+            android:id="@+id/action_tripDetalisScreen_to_seatScreen"
+            app:destination="@id/seatScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/newOrderScreen"
+        android:name="uz.anorgroup.doonkclient.presenter.screens.NewOrderScreen"
+        android:label="NewOrderScreen"
+        tools:layout="@layout/screen_new_order" />
 
 </navigation>

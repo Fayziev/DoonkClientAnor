@@ -39,7 +39,7 @@ class SeatsAdapter : ListAdapter<SeatData, SeatsAdapter.HistoryVH>(MyDifUtils) {
             if (value.state == 0) {
                 bind.stateImage.visibility = View.INVISIBLE
             } else if (value.state == 1) {
-                bind.stateImage.setImageResource(R.drawable.white_armchair)
+                bind.stateImage.setImageResource(R.drawable.kreslo)
             } else if (value.state == 2) {
                 bind.stateImage.setImageResource(R.drawable.red_armchair)
             } else if (value.state == 3) {
