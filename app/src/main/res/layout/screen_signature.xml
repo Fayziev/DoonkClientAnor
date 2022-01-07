@@ -366,6 +366,15 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="@id/signatureBg" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/signatureBg"
+            app:layout_constraintLeft_toLeftOf="@id/signatureBg"
+            android:src="@drawable/handcheck"
+            app:layout_constraintRight_toRightOf="@id/signatureBg"
+            app:layout_constraintTop_toTopOf="@id/signatureBg" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
